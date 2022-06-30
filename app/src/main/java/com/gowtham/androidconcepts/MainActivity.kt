@@ -8,15 +8,18 @@ import com.gowtham.androidconcepts.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    // TODO ViewBinding - It generate us a view called Binding Class and with this binding class we can access our Views
     private lateinit var mMainActivityViewBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // TODO mMainActivityViewBinding - here we are inflating our Layout and set that in the setContentView
         mMainActivityViewBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mMainActivityViewBinding.root)
         // TODO On Create - Calls When an Activity is Created
         Toast.makeText(this, "On Create Called", Toast.LENGTH_SHORT).show()
 
+        // TODO Setting the Button On Click
         mMainActivityViewBinding.moveNext.setOnClickListener {
 
             // TODO Intent - For Screen Navigation
@@ -62,3 +65,5 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "On Destroy Called", Toast.LENGTH_SHORT).show()
     }
 }
+
+// TODO Topics Covered - Activity Life Cycle and View Binding

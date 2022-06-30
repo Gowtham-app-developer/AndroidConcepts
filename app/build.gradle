@@ -23,6 +23,7 @@ android {
         }
     }
 
+    // TODO To Enable the View Binding
     buildFeatures {
         viewBinding true
     }
