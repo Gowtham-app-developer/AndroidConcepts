@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidConcepts">
         <activity
-            android:name="com.gowtham.androidconcepts.MainActivity"
+            android:name="com.gowtham.androidconcepts.navHost_fragment.NavigationHostActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
